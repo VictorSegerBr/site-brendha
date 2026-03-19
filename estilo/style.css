@@ -18,7 +18,22 @@ body {
     background-color: var(--lightpurple);
     font-family: 'Open Sans', sans-serif;
 }
-
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+header a {
+    text-decoration: none;
+    color: var(--darkpurple);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+header a:hover {
+    text-decoration: underline;
+}
 section.sobre {
     display: flex;
     justify-content: center;
@@ -90,6 +105,7 @@ div.textual{
     border-radius: 20px;
     max-width: 450px;
     padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
 }
 
 div.textual > h1{
@@ -121,6 +137,8 @@ section h3 {
 }
 .manual {
     max-width: 300px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
+    border-radius: 20px;
 }
 .manual h4{
     background-color: var(--lightestpurple);
@@ -151,6 +169,7 @@ section h3 {
     flex-direction: column;
     row-gap: 40px;
     border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
 }
 .org1 {
     display: flex;
@@ -187,6 +206,8 @@ section h3 {
 }
 .formacao {
     display: flex;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
+    border-radius: 20px;
 }
 .formacao h4 {
     background-color: var(--darkpurple);
@@ -227,6 +248,7 @@ section h3 {
     text-align: center;
     padding: 10px 0;
     border-radius: 20px 20px 0 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
 }
 .agil1 p {
     background-color: var(--lightestpurple);
@@ -235,6 +257,7 @@ section h3 {
     text-indent: 20px;
     padding: 15px;
     border-radius: 0 0 20px 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
 }
 .email1 {
     display: flex;
@@ -249,6 +272,7 @@ section h3 {
     padding: 10px 20px;
     border-radius: 10px;
     margin-bottom: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
 }
 .orglink {
     display: flex;
@@ -270,4 +294,72 @@ footer a{
 }
 footer a:hover {
     text-decoration: underline;
+}
+@media screen and (max-width: 720px) {
+    header a {
+        font-size: 1em;
+    }
+    div.grid1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8vw;
+    }
+    div.perfil > img {
+        max-width: 200px;
+    }
+    .buttonicon {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+    div.textual {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+    section h3 {
+        margin: 5vw 0;
+    }
+    .subtituloh3 {
+        text-align: center;
+        margin-bottom: 2px;
+        font-size: 0.9em;
+    }
+    .orgmanual {
+        flex-direction: column;
+    }
+    .manual {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+    .org2 {
+        transform: scale(0.8);
+        transform-origin: center;
+        row-gap: 10px;
+    }
+    .org1 {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    .formacao {
+        transform: scale(0.7);
+        transform-origin: center;
+    }
+    .orgagil1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .agil1 {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+    #email {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+    footer{
+        font-size: 0.8em;
+    }
 }
