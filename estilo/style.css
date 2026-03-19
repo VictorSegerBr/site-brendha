@@ -201,7 +201,10 @@ section h3 {
     align-items: center;
 }
 .orgformacao {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     row-gap: 20px;
 }
 .formacao {
@@ -220,7 +223,7 @@ section h3 {
     background-color: var(--lightestpurple);
     color: var(--darkpurple);
     text-align: left;
-    width: 380px;
+    max-width: 380px;
     padding: 10px 15px;
     border-radius: 0 20px 20px 0;
 }
@@ -304,7 +307,7 @@ footer a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 8vw;
+    row-gap:  3vw;
     }
     div.perfil > img {
         max-width: 200px;
