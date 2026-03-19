@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     padding-top: 10px;
 }
 header a {
@@ -132,12 +132,11 @@ section h3 {
 .orgmanual {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     column-gap: 20px;
 }
 .manual {
     max-width: 300px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
     border-radius: 20px;
 }
 .manual h4{
@@ -146,6 +145,7 @@ section h3 {
     text-align: center;
     padding: 10px 0;
     border-radius: 20px 20px 0 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
 }
 .manual p {
     background-color: var(--darkpurple);
@@ -154,6 +154,7 @@ section h3 {
     text-indent: 20px;
     padding: 15px;
     border-radius: 0 0 20px 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
 }
 .automatizado {
     display: flex;
@@ -330,6 +331,8 @@ footer a:hover {
     }
     .orgmanual {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .manual {
         transform: scale(0.8);
