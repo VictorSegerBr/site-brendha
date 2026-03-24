@@ -120,7 +120,7 @@ div.textual > h2{
 }
 div.textual > p{
     color: var(--darkpurple);
-    text-align: justify;
+    text-align: left;
 }
 section h3 {
     color: var(--darkpurple);
@@ -152,7 +152,7 @@ section h3 {
 .manual p {
     background-color: var(--darkpurple);
     color: var(--lightpurple);
-    text-align: justify;
+    text-align: left;
     text-indent: 20px;
     padding: 15px;
     border-radius: 0 0 20px 20px;
@@ -259,7 +259,7 @@ section h3 {
 .agil1 p {
     background-color: var(--lightestpurple);
     color: var(--darkpurple);
-    text-align: justify;
+    text-align: left;
     text-indent: 20px;
     padding: 15px;
     border-radius: 0 0 20px 20px;
